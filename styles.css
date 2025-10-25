@@ -1,76 +1,31 @@
-:root{
-  --bg:#0f1724;
-  --card:#0b1220;
-  --accent:#4f46e5;
-  --text:#e6eef8;
-}
+:root{ --max-width:1100px; --accent:#0b74de }
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,\"Helvetica Neue\",Arial;margin:0;padding:24px;color:#111}
+.container{max-width:var(--max-width);margin:0 auto}
 
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Inter,system-ui,Arial;
-  background:linear-gradient(180deg,var(--bg),#071028);
-  color:var(--text);
-  line-height:1.4;
-}
 
-.container{
-  max-width:1000px;
-  margin:0 auto;
-  padding:24px;
-}
+header{display:flex;align-items:center;gap:12px}
+/* Logo as an icon */
+#logo{width:40px;height:40px;object-fit:contain;border-radius:6px}
+h1{font-size:24px;margin:0}
 
-/* Hero */
-.hero{
-  padding:80px 0;
-  text-align:center;
-}
-h1{
-  font-size:48px;
-  margin:0 0 8px;
-}
-.tagline{
-  margin:0 0 20px;
-  opacity:0.9;
-  font-size:18px;
-}
-.cta{
-  display:inline-block;
-  padding:12px 20px;
-  background:var(--accent);
-  color:white;
-  text-decoration:none;
-  border-radius:10px;
-  font-weight:600;
-}
 
-/* Features */
-.features{
-  display:flex;
-  gap:16px;
-  margin-top:40px;
-  flex-wrap:wrap;
-  justify-content:space-between;
-}
-.feature{
-  background:rgba(255,255,255,0.03);
-  padding:18px;
-  border-radius:12px;
-  flex:1 1 30%;
-  min-width:220px;
-  box-shadow: 0 6px 18px rgba(10,14,24,0.5);
-}
+.hero{display:flex;flex-wrap:wrap;gap:32px;align-items:center;margin-top:28px}
+/* ensure image and CTA stack vertically on narrow screens */
+.hero-visual{flex:1 1 320px;display:flex;flex-direction:column;align-items:center}
+.hero-visual img{max-width:420px;width:100%;height:auto;border-radius:8px}
 
-/* About & Footer */
-.about{
-  margin-top:40px;
-  padding:20px;
-  background:rgba(255,255,255,0.02);
-  border-radius:10px;
+
+/* place the Try Ledgr button underneath the image */
+.try-btn{display:inline-block;margin-top:14px;padding:12px 20px;border-radius:8px;border:none;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+
+
+.features{flex:1 1 300px}
+.feature{margin-bottom:18px}
+
+
+@media (max-width:640px){
+header{justify-content:center}
+.hero{flex-direction:column}
+h1{font-size:20px}
+#logo{width:36px;height:36px}
 }
-.site-footer{
-  margin:40px auto 20px;
-  text-align:center;
-  opacity:0.85;
-}
-a{color:var(--accent)}
