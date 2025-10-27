@@ -4,103 +4,109 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ledgr — Simple finance for everyone</title>
+
+  <!-- Font & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous">
+
+  <!-- Your stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="hero">
+  <header class="hero" role="banner">
     <div class="container hero-content">
       <div class="brand">
         <img src="images/Logo design for a bu.png" alt="Ledgr logo" class="logo">
-        <h1>Ledgr</h1>
+        <h1 class="brand-title">Ledgr</h1>
       </div>
-      <div>
-      <p class="tagline">Keep track of money the easy way — for people and small teams.</p>
-      <a class="cta" href="#">Try Ledgr</a>
-      </div>
-    </header>
 
-  <section class="display container">
-     <div class="hero-image">
-        <div>
-          <h2>Manage your finances effortlessly</h2>
-          <p>With Ledgr, you can easily track your income and expenses, 
-            generate reports, and stay on top of your financial health.</p>
-          </div>
-        <img src="images/Marketwoman.jpeg" alt="Person using the Ledgr app">
-      </div>
-      <!-- Mobile phone image to overlap Marketwoman image -->
-      <div>
-        <img src="images/Front.jpeg" alt="Image of Ledgr app on mobile device">
+      <div class="hero-copy">
+        <p class="tagline">Keep track of money the easy way — for people and small teams.</p>
+        <a class="cta" href="#">Try Ledgr</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section class="features container">
-    <h2>Built for Traders and small Businesses</h2>
-    <p class="section-intro">
-    Ledgr helps you stay on top of sales, inventory, and customer records — all in one 
-    simple, powerful app. Whether you're tracking daily transactions or reviewing yearly 
-    performance, Ledgr keeps your business organized and growing
-  </p>
-    <div class="feature">
-      <i class="fas fa-boxes"></i> <h3><B>Monitor Your Business in seconds </B></h3>
-      <p>Add daily sales and inventory with ease. 
-        Ledgr helps you track every item — what you’ve bought, sold, and 
-        what’s still in stock — so you can stay focused on growth, performance, 
-        and smart decisions.
-</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-chart-line"></i><h3><b>See the big picture at a glance</b></h3>
-      <p>Track your total yearly sales, quantity sold, and inventory expenses — 
-        all in one clean, easy-to-understand dashboard. Ledgr gives you the clarity 
-        you need to make smarter decisions and grow with confidence
-</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-lock"></i><h3><B>Your Data, Your Control</B></h3>
-      <p>Ledgr keeps your business data private and secure. We use trusted 
-        encryption and privacy-first design so only you can access your records — 
-        no leaks, no compromises
-</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-history"></i><h3><b>Your full History, Always within Reach</b>/h3>
-      <p> Instantly access your complete sales and inventory records — past and present. 
-        Ledgr keeps everything organized and searchable, so you’re never more than a 
-        click away from the insights you need.
-</p>
-    </div>
-  </section>
+  <main>
+    <section class="display container" aria-labelledby="manage-heading">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h2 id="manage-heading">Manage your finances effortlessly</h2>
+          <p>With Ledgr, you can easily track your income and expenses, generate reports, and stay on top of your financial health.</p>
+        </div>
 
-  <!-- Showcase section -->
-  <section class="showcase container">
-    <h2>See Ledgr in action</h2>
-    <p>Here’s a quick look at what you can do with the app.</p>
-    <div class="showcase-grid">
-      <div class="showcase-item">
-        <img src="images/Front.jpeg" alt="Transaction screen">
-        <p>Record and track daily transactions with ease.</p>
+        <div class="hero-visuals">
+          <img src="images/Marketwoman.jpeg" alt="Person using the Ledgr app" class="bg-image">
+          <img src="images/Front.jpeg" alt="Image of Ledgr app on mobile device" class="phone-image">
+        </div>
       </div>
-      <div class="showcase-item">
-        <img src="images/Inventory.jpeg" alt="Reports screen">
-        <p>Get visual insights into your spending and income.</p>
-      </div>
-      <div class="showcase-item">
-        <img src="images/sales.jpeg" alt="Reports screen">
-        <p>Get visual insights into your spending and income.</p>
-      </div>
-      <div class="showcase-item">
-        <img src="images/Dashboard.jpeg" alt="Reports screen">
-        <p>Get visual insights into your spending and income.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="site-footer container">
-    <p>Made with ♥ by <strong>Olaseni Olaseni-Ajeboriogbon</strong> — <a href="https://github.com/Olaseni-Ajeboriogbon/ledgr-landing" target="_blank">GitHub</a></p>
+    <section class="features container" aria-labelledby="features-heading">
+      <h2 id="features-heading">Built for Traders and small Businesses</h2>
+      <p class="section-intro">
+        Ledgr helps you stay on top of sales, inventory, and customer records — all in one simple, powerful app. Whether you're tracking daily transactions or reviewing yearly performance, Ledgr keeps your business organized and growing.
+      </p>
+
+      <div class="features-grid">
+        <article class="feature">
+          <i class="fas fa-boxes feature-icon" aria-hidden="true"></i>
+          <h3><strong>Monitor your business in seconds</strong></h3>
+          <p>Add daily sales and inventory with ease. Ledgr helps you track every item — what you’ve bought, sold, and what’s still in stock.</p>
+        </article>
+
+        <article class="feature">
+          <i class="fas fa-chart-line feature-icon" aria-hidden="true"></i>
+          <h3><strong>See the big picture at a glance</strong></h3>
+          <p>Track your total yearly sales, quantity sold, and inventory expenses — all in one clean, easy-to-understand dashboard.</p>
+        </article>
+
+        <article class="feature">
+          <i class="fas fa-lock feature-icon" aria-hidden="true"></i>
+          <h3><strong>Your data, your control</strong></h3>
+          <p>Ledgr keeps your business data private and secure with strong encryption and privacy-first design.</p>
+        </article>
+
+        <article class="feature">
+          <i class="fas fa-history feature-icon" aria-hidden="true"></i>
+          <h3><strong>Your full history, always within reach</strong></h3>
+          <p>Instantly access your complete sales and inventory records — past and present. Everything is organized and searchable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase container" aria-labelledby="showcase-heading">
+      <h2 id="showcase-heading">See Ledgr in action</h2>
+      <p>Here’s a quick look at what you can do with the app.</p>
+
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <img src="images/Front.jpeg" alt="Transaction screen">
+          <p>Record and track daily transactions with ease.</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/Inventory.jpeg" alt="Inventory screen">
+          <p>Manage items, stock levels and costs.</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/sales.jpeg" alt="Sales screen">
+          <p>Visualize sales and revenue performance.</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/Dashboard.jpeg" alt="Dashboard screen">
+          <p>Get clear visual insights into your business health.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container" role="contentinfo">
+    <p>Made with ♥ by <strong>Olaseni Olaseni-Ajeboriogbon</strong> — <a href="https://github.com/Olaseni-Ajeboriogbon/ledgr-landing" target="_blank" rel="noopener noreferrer">GitHub</a></p>
   </footer>
+
 </body>
 </html>
+
 
